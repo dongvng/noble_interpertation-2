@@ -73,21 +73,42 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "Noble Interpretation" },
-      { name: "description", content: "Premium enterprise interpretation & multilingual communication." },
+      {
+        name: "description",
+        content: "Premium enterprise interpretation & multilingual communication.",
+      },
       { name: "author", content: "Noble Interpretation" },
       { property: "og:title", content: "Noble Interpretation" },
-      { property: "og:description", content: "Premium enterprise interpretation & multilingual communication." },
+      {
+        property: "og:description",
+        content: "Premium enterprise interpretation & multilingual communication.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Noble Interpretation" },
-      { name: "twitter:description", content: "Premium enterprise interpretation & multilingual communication." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3185f399-5b4c-40fc-9487-449f22e01192/id-preview-992e63ae--e9322bc6-57f4-4dbe-a7e0-e3ca823e4fac.lovable.app-1778473236725.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3185f399-5b4c-40fc-9487-449f22e01192/id-preview-992e63ae--e9322bc6-57f4-4dbe-a7e0-e3ca823e4fac.lovable.app-1778473236725.png" },
+      {
+        name: "twitter:description",
+        content: "Premium enterprise interpretation & multilingual communication.",
+      },
+      {
+        property: "og:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3185f399-5b4c-40fc-9487-449f22e01192/id-preview-992e63ae--e9322bc6-57f4-4dbe-a7e0-e3ca823e4fac.lovable.app-1778473236725.png",
+      },
+      {
+        name: "twitter:image",
+        content:
+          "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/3185f399-5b4c-40fc-9487-449f22e01192/id-preview-992e63ae--e9322bc6-57f4-4dbe-a7e0-e3ca823e4fac.lovable.app-1778473236725.png",
+      },
     ],
     links: [
       {
         rel: "stylesheet",
         href: appCss,
+      },
+      {
+        rel: "icon",
+        href: "/favicon.ico",
       },
     ],
   }),
