@@ -20,15 +20,9 @@ const stripLogos = [...partners, ...partners];
 
 function PartnerStrip({ ariaHidden = false }: { ariaHidden?: boolean }) {
   return (
-    <div
-      className="flex shrink-0 items-center gap-16 pr-16"
-      aria-hidden={ariaHidden || undefined}
-    >
+    <div className="flex shrink-0 items-center gap-16 pr-16" aria-hidden={ariaHidden || undefined}>
       {stripLogos.map((p, i) => (
-        <div
-          key={`${p.alt}-${i}`}
-          className="flex h-20 w-44 shrink-0 items-center justify-center"
-        >
+        <div key={`${p.alt}-${i}`} className="flex w-44 shrink-0 items-center justify-center">
           <img
             src={p.src}
             alt={ariaHidden ? "" : p.alt}
